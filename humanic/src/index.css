@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* add the code bellow */ 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+
+.media-object {
+    --border-width: 1px;
+    --radius: 23px;
+    position: relative;
+    border-radius: var(--radius);
+    border: var(--border-width) solid transparent;
+  }
+  
+  .media-object::before {
+    content: "";
+    position: absolute;
+    inset: calc(var(--border-width) * -1);
+    z-index: -1;
+    border: inherit;
+    border-radius: inherit;
+    background-image: conic-gradient(from var(--angle), #0e0b0b 80%, #F44876 88%, #ff8fad  92%, #2a0b13 100%);
+    background-origin: border-box;
+    -webkit-mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+    mask: linear-gradient(black, black), linear-gradient(black, black);
+    -webkit-mask-clip: content-box, border-box;
+    mask-clip: content-box, border-box;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: spin 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .media-object:hover::before {
+    opacity: 1;
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
+  @keyframes spin {
+    to {
+      --angle: 2turn;
+    }
+  }
+  
+  
+  
+  

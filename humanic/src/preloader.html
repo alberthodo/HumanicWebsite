@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radial Lines Circle</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+
+    .line {
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      background: #FF3366; /* Bright pink color */
+      top: 0;
+      left: 50%;
+      transform-origin: bottom center;
+    }
+
+    /* Generate multiple lines using CSS and inline HTML */
+  </style>
+</head>
+<body>
+  <div class="circle">
+    <!-- 24 lines around the circle -->
+    <!-- 360 degrees / 24 = 15 degrees per line -->
+    <!-- So each line is rotated by 15 degrees more -->
+    <div class="line" style="transform: rotate(0deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(15deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(30deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(45deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(60deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(75deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(90deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(105deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(120deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(135deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(150deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(165deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(180deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(195deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(210deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(225deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(240deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(255deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(270deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(285deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(300deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(315deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(330deg) translateY(-40px);"></div>
+    <div class="line" style="transform: rotate(345deg) translateY(-40px);"></div>
+  </div>
+</body>
+</html>
