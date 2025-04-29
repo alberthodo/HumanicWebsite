@@ -148,8 +148,8 @@ export default function CardsSection() {
 
           {/* Source Buttons */}
           <div className="mt-4 flex items-center justify-between flex-wrap gap-4">
-            <img src="/public/sources.png" alt="Sources" className="h-6 w-auto" />
-            <img src="/public/copypinrecycle.png" alt="Copy Pin Recycle" className="h-5 w-auto" />
+            <img src="/sources.png" alt="Sources" className="h-6 w-auto" />
+            <img src="/copypinrecycle.png" alt="Copy Pin Recycle" className="h-5 w-auto" />
           </div>
         </div>
       </div>
