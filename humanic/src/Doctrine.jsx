@@ -25,7 +25,7 @@ export default function Doctrine() {
   
 
   return (
-    <div className="relative min-h-screen bg-black text-white font-manrope overflow-hidden ">
+    <div className="relative min-h-screen bg-black text-white font-manrope overflow-hidden  scrollbar-hide">
       {/* Navbar */}
       <div className={`relative z-10 flex items-center justify-between px-6 md:px-16 py-6 no-scrollbar transition-opacity duration-1000 ease-out ${
     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -67,13 +67,13 @@ export default function Doctrine() {
 
         <div className="space-y-6 text-lg text-gray-200" data-aos="fade-up">
           <p className="md:pt-[10%] text-[1rem] md:text-2xl" ><strong>Sales isn’t fair. It never was.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. We’re here for the ones who refuse to lose.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. <br /> We’re here for the ones who refuse to lose.</p>
 
           <p className="md:pt-[2%] text-[1rem] md:text-2xl" ><strong>Humanic is your unfair advantage.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” You’re not guessing. <br /> You’re controlling the outcome.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” <br /> You’re not guessing. You’re controlling the outcome.</p>
 
           <p className="md:pt-[2%] text-[1rem] md:text-2xl" > <strong>Your competition is stuck in Google Docs and Slack threads.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" > You’re out here closing before they finish their intro. They’re playing checkers. You’re running a casino.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" > You’re out here closing before they finish their intro. <br /> They’re playing checkers. You’re running a casino.</p>
 
           <p className="text-[1rem] md:text-[1.1rem] leading-loose" >We don’t care about “best practices.” <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you’re probably the one getting outsold.</p>
 
