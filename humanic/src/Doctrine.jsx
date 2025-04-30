@@ -1,11 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Doctrine() {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // short delay to ensure DOM is ready
+    return () => clearTimeout(timeout);
+  }, []);
+  
+    useEffect(() => {
+      AOS.init({
+        duration: 800, // animation duration in ms
+        once: false    // whether animation should happen only once
+      });
+      setTimeout(() => {
+        AOS.refresh();
+      }, 100);
+    }, []);
+  
+
   return (
     <div className="relative min-h-screen bg-black text-white font-manrope overflow-hidden">
       {/* Navbar */}
-      <div className="relative z-10 flex items-center justify-between px-6 md:px-16 py-6 no-scrollbar">
+      <div className={`relative z-10 flex items-center justify-between px-6 md:px-16 py-6 no-scrollbar transition-opacity duration-1000 ease-out ${
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+  }`}>
         <div className="flex items-center">
         <Link to="/">
   <img src="/humanictitle.png" alt="Humanic Logo" className="h-8 md:h-10 cursor-pointer" />
@@ -32,33 +56,35 @@ export default function Doctrine() {
       </div>
 
       {/* Text Content */}
-      <div className="relative z-10 max-w-3xl mx-auto px-6 md:px-0 pt-[9%] pb-40 text-left space-y-10 font-manrope" >
+      <div className={`relative z-10 max-w-3xl mx-auto px-6 md:px-0 pt-[9%] pb-40 text-left space-y-10 font-manrope transition-opacity duration-1000 ease-out ${
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+  }`} >
         <h1 className="text-4xl leading-tight md:leading-tight md:text-6xl  ">
           Close every sales call.<br />
           No exceptions.
         </h1>
 
-        <div className="space-y-6 text-lg text-gray-200">
-          <p className="md:pt-[10%] text-2xl"><strong>Sales isn’t fair. It never was.</strong></p>
-          <p className="text-[1.1rem] leading-loose">Some people fumble through objections. Others steamroll them. We’re here for the ones who refuse to lose.</p>
+        <div className="space-y-6 text-lg text-gray-200" data-aos="fade-up">
+          <p className="md:pt-[10%] text-2xl" ><strong>Sales isn’t fair. It never was.</strong></p>
+          <p className="text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. We’re here for the ones who refuse to lose.</p>
 
-          <p className="md:pt-[2%] text-2xl"><strong>Humanic is your unfair advantage.</strong></p>
-          <p className="text-[1.1rem] leading-loose">It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” You’re not guessing. <br /> You’re controlling the outcome.</p>
+          <p className="md:pt-[2%] text-2xl" ><strong>Humanic is your unfair advantage.</strong></p>
+          <p className="text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” You’re not guessing. <br /> You’re controlling the outcome.</p>
 
-          <p className="md:pt-[2%] text-2xl"> <strong>Your competition is stuck in Google Docs and Slack threads.</strong></p>
-          <p className="text-[1.1rem] leading-loose">You’re out here closing before they finish their intro. They’re playing checkers. You’re running a casino.</p>
+          <p className="md:pt-[2%] text-2xl" > <strong>Your competition is stuck in Google Docs and Slack threads.</strong></p>
+          <p className="text-[1.1rem] leading-loose" > You’re out here closing before they finish their intro. They’re playing checkers. You’re running a casino.</p>
 
-          <p className="text-[1.1rem] leading-loose">We don’t care about “best practices.” <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you’re probably the one getting outsold.</p>
+          <p className="text-[1.1rem] leading-loose" >We don’t care about “best practices.” <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you’re probably the one getting outsold.</p>
 
-          <p className="md:pt-[2%] text-2xl"><strong>This isn’t software. It’s a weapon.</strong></p>
-          <p className="text-[1.1rem] leading-loose">For closers. Killers. People who walk into calls knowing the deal is already done. <br />Humanic doesn’t help you sell — it makes sure you win. <br />So if you’re still asking “is this fair?” — you’re already behind.</p>
+          <p className="md:pt-[2%] text-2xl" ><strong>This isn’t software. It’s a weapon.</strong></p>
+          <p className="text-[1.1rem] leading-loose" >For closers. Killers. People who walk into calls knowing the deal is already done. <br />Humanic doesn’t help you sell — it makes sure you win. <br />So if you’re still asking “is this fair?” — you’re already behind.</p>
 
-          <p className="md:pt-[4%] text-2xl md:leading-relaxed"><strong>Welcome to the future of selling.<br />
+          <p className="md:pt-[4%] text-2xl md:leading-relaxed" ><strong>Welcome to the future of selling.<br />
           It’s rigged. And you’re holding the controls.</strong></p>
         </div>
 
               {/* Buttons */}
-              <div className="flex flex-col md:flex-row gap-4 items-center md:items-start justify-center md:justify-start w-full no-scrollbar z-10 relative pt-[4%] font-manrope">
+              <div className="flex flex-col md:flex-row gap-4 items-center md:items-start justify-center md:justify-start w-full no-scrollbar z-10 relative pt-[4%] font-manrope" data-aos="fade-up">
 
   {/* Transparent Waitlist Button */}
   <button className="flex items-center justify-center gap-2 border border-[#F44876] text-white hover:bg-[#F44876] hover:text-white px-5 py-3 md:px-6 md:py-3 rounded-lg text-lg md:text-lg transition w-full max-w-[300px] md:max-w-[300px] md:w-auto">

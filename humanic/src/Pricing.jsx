@@ -37,15 +37,36 @@ export default function Pricing() {
 
 
 <div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl w-full px-4 pt-[5%] font-manrope" data-aos="fade-in">
+  {/* Toggle Buttons - shown above cards on mobile/tablet */}
+<div className="col-span-full flex justify-center mb-10 space-x-2 lg:hidden">
+  <button
+    onClick={() => setBillingCycle("monthly")}
+    className={`px-5 py-2 text-sm rounded-md border transition duration-300 ${
+      isMonthly ? "border-[#F44876] text-white" : "border-transparent text-gray-300 hover:border-[#F44876]"
+    }`}
+  >
+    Monthly
+  </button>
+  <button
+    onClick={() => setBillingCycle("yearly")}
+    className={`px-5 py-2 text-sm rounded-md border transition duration-300 ${
+      !isMonthly ? "border-[#F44876] text-white" : "border-transparent text-gray-300 hover:border-[#F44876]"
+    }`}
+  >
+    Yearly
+  </button>
+</div>
+
+
   {/* Free Plan */}
   <div className="group relative p-8 rounded-2xl border border-white/10 bg-gradient-to-b from-[#290c14] to-transparent via-transparent backdrop-blur-sm shadow-lg transition-all duration-300 ease-in-out hover:scale-[1.02] w-full mx-auto ">
     <div className="absolute inset-0 rounded-2xl border border-white/10"></div>
     <div className="relative z-10 flex flex-col items-start">
       <h3 className="text-2xl font-semibold mb-2 text-white text-left">Free</h3>
       <p className="text-gray-400 mb-6 text-left">See how Humanic powers your sales calls!</p>
-      <div className="flex items-baseline gap-2 mb-6 transition-all duration-500">
+      <div className="flex items-baseline gap-2 mb-6 transition-all duration-500 medium-desktop:flex-col medium-desktop:items-start medium-desktop:gap-0">
         <div className="md:text-7xl text-7xl font-semibold text-white">$0</div>
-        <p className="text-gray-400 text-lg transition-opacity duration-500 opacity-100">/ per month</p>
+        <p className="text-gray-400 text-lg transition-opacity duration-500 opacity-100 medium-desktop:mt-3 medium-desktop:mb-4">/ per month</p>
       </div>
       <button className="bg-[rgba(169,169,169,0.1)] border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] rounded-xl px-6 py-2 text-white transition w-[90%] max-w-[calc(90%-2px)] mx-auto">
         Get Started
@@ -79,20 +100,23 @@ export default function Pricing() {
     <div className="relative h-[80px] mb-6">
       {/* Monthly Price */}
       <div
-        className={`absolute inset-0 flex items-end gap-2 transition-opacity duration-300 ease-in-out ${
-          isMonthly ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="flex items-baseline">
-          <span className="text-7xl text-white font-semibold">$19</span>
-          <span className="md:text-5xl text-4xl text-white font-semibold">.99</span>
-        </div>
-        <p className="text-gray-400 text-lg whitespace-nowrap">/ per month</p>
-      </div>
+  className={`absolute inset-0 flex items-end gap-2 transition-opacity duration-300 ease-in-out 
+    ${isMonthly ? "opacity-100" : "opacity-0"} 
+    medium-desktop:flex-col medium-desktop:items-start medium-desktop:gap-0`}
+>
+  <div className="flex items-baseline">
+    <span className="text-7xl text-white font-semibold">$19</span>
+    <span className="md:text-5xl text-4xl text-white font-semibold">.99</span>
+  </div>
+  <p className="text-gray-400 text-lg whitespace-nowrap medium-desktop:mt-3 medium-desktop:mb-4">
+    / per month
+  </p>
+</div>
+
 
       {/* Yearly Price */}
       <div
-        className={`absolute inset-0 flex items-end transition-opacity duration-300 ease-in-out ${
+        className={`absolute inset-0 flex items-end transition-opacity duration-300 ease-in-out  ${
           isMonthly ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -101,7 +125,7 @@ export default function Pricing() {
     </div>
 
     {/* CTA Button */}
-    <button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition md:w-[90%] w-[94%] mx-auto">
+    <button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition md:w-[90%] w-[94%] mx-auto medium-desktop:mt-10">
       Get Started
     </button>
 
@@ -127,7 +151,7 @@ export default function Pricing() {
     <div className="relative z-10 flex flex-col items-start">
       <h3 className="text-2xl font-semibold mb-2 text-white text-left">Enterprise</h3>
       <p className="text-gray-400 mb-6 text-left">For 10x Sales and GTM teams</p>
-      <div className="md:text-7xl text-6xl mb-2 text-white font-semibold transition-all duration-500">Custom</div>
+      <div className="md:text-7xl text-6xl mb-2 text-white font-semibold transition-all duration-500 medium-desktop:text-[3.6rem]">Custom</div>
       <p className="text-gray-400 mb-6 transition-opacity duration-500"> </p>
       <button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition w-[90%] max-w-[calc(90%-2px)] mx-auto">
         Get Started
@@ -146,21 +170,26 @@ export default function Pricing() {
     </div>
   </div>
 
-  {/* Toggle Buttons */}
-  <div className="col-span-full flex justify-center mt-10 space-x-2">
-    <button
-      onClick={() => setBillingCycle("monthly")}
-      className={`px-5 py-2 text-sm rounded-md border transition duration-300 ${isMonthly ? "border-[#F44876] text-white" : "border-transparent text-gray-300 hover:border-[#F44876]"}`}
-    >
-      Monthly
-    </button>
-    <button
-      onClick={() => setBillingCycle("yearly")}
-      className={`px-5 py-2 text-sm rounded-md border transition duration-300 ${!isMonthly ? "border-[#F44876] text-white" : "border-transparent text-gray-300 hover:border-[#F44876]"}`}
-    >
-      Yearly
-    </button>
-  </div>
+{/* Toggle Buttons - shown below cards on desktop only */}
+<div className="col-span-full flex justify-center mt-10 space-x-2 hidden lg:flex">
+  <button
+    onClick={() => setBillingCycle("monthly")}
+    className={`px-5 py-2 text-sm rounded-md border transition duration-300 ${
+      isMonthly ? "border-[#F44876] text-white" : "border-transparent text-gray-300 hover:border-[#F44876]"
+    }`}
+  >
+    Monthly
+  </button>
+  <button
+    onClick={() => setBillingCycle("yearly")}
+    className={`px-5 py-2 text-sm rounded-md border transition duration-300 ${
+      !isMonthly ? "border-[#F44876] text-white" : "border-transparent text-gray-300 hover:border-[#F44876]"
+    }`}
+  >
+    Yearly
+  </button>
+</div>
+
 </div>
 
 

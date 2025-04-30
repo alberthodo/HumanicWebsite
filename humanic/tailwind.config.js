@@ -13,6 +13,9 @@ export default {
         animation: {
           spinSlow: 'spin 10s linear infinite',
         },
+        screens: {
+          'medium-desktop': {'raw': '(min-width: 1024px) and (max-width: 1250px)'},
+        },
     
       },
     },

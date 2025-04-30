@@ -66,7 +66,16 @@ export default function CardsSection() {
   {/* <div className="absolute bottom-0 left-0 w-full h-10 bg-black z-10 rounded-b-none"></div>
 </div> */}
 
-<div className="relative w-full max-w-7xl mx-auto h-auto min-h-[543px] overflow-hidden rounded-t-[2rem]" data-aos="fade-up">
+<div className="block md:hidden w-full flex justify-center items-center py-10">
+    <img
+      src="/Group 128.png"
+      alt="Mobile Placeholder"
+      className="w-[100%] h-auto object-contain"
+    />
+  </div>
+
+
+<div className=" hidden md:block relative w-full max-w-7xl mx-auto h-auto min-h-[543px] overflow-hidden rounded-t-[2rem]" data-aos="fade-up">
   {/* Outer Gradient Border */}
   <div className="absolute inset-0 p-[1px] rounded-t-[2rem] bg-gradient-to-b from-[#EA7575] to-transparent z-0">
     <div className="w-full h-full rounded-t-[2rem] bg-gradient-to-b from-[#1d070d] to-black"></div>
@@ -78,10 +87,10 @@ export default function CardsSection() {
    {/* Top Row */}
 <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
   <div className="leading-tight">
-    <h2 className="text-xl sm:text-2xl font-semibold whitespace-nowrap mb-[5px]">
+    <h2 className="text-sm sm:text-2xl font-semibold whitespace-nowrap mb-[5px]">
       Meeting w/Martha: GroundBlu Tech
     </h2>
-    <p className="text-sm text-gray-300">Wednesday, April 25</p>
+    <p className="text-xs text-gray-300">Wednesday, April 25</p>
   </div>
 
   <div className="flex items-center justify-between w-full md:w-auto md:ml-auto md:gap-12 flex-wrap">
@@ -94,7 +103,7 @@ export default function CardsSection() {
   {/* Play/Pause Buttons */}
   <div className="flex gap-2 items-center p-1 rounded-lg border border-[#F44876] bg-white/10">
     <button className="rounded-full p-2 hover:bg-white/20 transition-colors">
-      <svg className="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <svg className="h-4 w-4 text-white" fill="black" viewBox="0 0 24 24">
         <path d="M8 5v14l11-7z" />
       </svg>
     </button>
@@ -162,6 +171,9 @@ export default function CardsSection() {
 
 
 
+
+
+
       {/* --- Middle Heading --- */}
       <div className="text-center space-y-4 " data-aos = "fade-up">
         <h2 className="md:pt-[5%] text-[2.5rem] md:text-5xl text-white " >
@@ -198,7 +210,7 @@ export default function CardsSection() {
     },
     {
       title: 'Automation',
-      text: "Keep conversations tight, accurate, and run lean sales cycles—without cutting corners. Win trust faster by  delivering at every step",
+      text: "Keep conversations tight, accurate, and run lean sales cycles—without cutting corners.Win trust faster by  delivering at every step",
     },
   ].map((card, i) => (
     <div className="relative border border-transparent rounded-[24px] media-object p-[1px]" key={i}>
