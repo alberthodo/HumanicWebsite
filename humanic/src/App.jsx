@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
     useEffect(() => {
       AOS.init({
-        duration: 840, // animation duration in ms
+        duration: 800, // animation duration in ms
         once: false    // whether animation should happen only once
       });
       setTimeout(() => {
