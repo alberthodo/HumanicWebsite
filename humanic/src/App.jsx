@@ -92,17 +92,22 @@ useEffect(() => {
   }`}
 >
   {/* Wrapper for consistent left alignment */}
-  <div className="w-full max-w-5xl">
+<div className="w-full max-w-5xl">
 
-    {/* Beta Info */}
-    <p className="text-xs sm:text-[0.8rem] mb-8 text-left">
+{/* Beta Info */}
+<p className="text-xs sm:text-[0.8rem] mb-8 text-left">
   <NavLink
     to="/doctrine"
-    className="inline-block border border-[rgba(255,255,255,0.5)] rounded-md px-3 py-1 text-[rgba(255,255,255,0.8)] underline"
+    className="inline-block border border-[rgba(255,255,255,0.5)] rounded-md px-3 pt-1 pb-[5px] md:pb-[6px] text-[rgba(255,255,255,0.8)] underline"
   >
     Read: Why we are building Humanic
   </NavLink>
 </p>
+
+
+
+
+
 
 
     {/* Heading */}
@@ -176,7 +181,7 @@ useEffect(() => {
 
         {/* Footer */}
 <footer className="w-full py-0 bg-black">
-  <div className="w-[90%] max-w-7xl h-[60px] sm:h-[80px] flex items-center justify-between px-4 sm:px-6 mx-auto border-t border-l border-r border-[rgba(255,255,255,0.2)] rounded-xl">
+  <div className="w-[90%] max-w-7xl h-[60px] sm:h-[80px] flex items-center justify-between px-4 sm:px-6 mx-auto border-t border-l border-r border-[rgba(255,255,255,0.2)] rounded-t-xl">
     
     {/* Left: Logo */}
     <div className="flex items-center h-full">
