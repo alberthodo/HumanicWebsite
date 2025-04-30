@@ -25,7 +25,7 @@ export default function CardsSection() {
         <h2 className="text-4xl md:text-5xl text-white pt-[25%] md:pt-[0%]">
           Real Insights. Real Time. Without Asking.
         </h2>
-        <p className="text-gray-300 md:text-xl max-w-3xl mx-auto md:pt-[2%]">
+        <p className="text-gray-300 md:text-xl max-w-3xl mx-auto md:pt-[2%] pt-[10%]">
         Humanic turns your sales playbook into instant intel, slipping you the perfect response before your prospect even finishes.
         </p>
       </div>
@@ -71,7 +71,7 @@ export default function CardsSection() {
   {/* hello */}
 
   <div className="block md:hidden w-full bg-black">
-  <div className="w-full h-full flex justify-center items-center bg-black">
+  <div className="w-full h-full flex justify-center items-center bg-black pb-[15%]">
     <img
       src="/Group 128.png"
       alt="Mobile Placeholder"
@@ -183,7 +183,7 @@ export default function CardsSection() {
 
       {/* --- Middle Heading --- */}
       <div className="text-center space-y-4 " data-aos = "fade-up">
-        <h2 className="md:pt-[5%] text-[2.5rem] md:text-5xl text-white " >
+        <h2 className="md:pt-[5%] text-[2.5rem] md:text-5xl text-white pt-[10%]" >
           Context. Confidence. Content.
         </h2>
         <p className="text-[rgba(255,255,255,0.8)] md:pt-[2%] md:text-xl max-w-4xl mx-auto pt-[8%]" >  
@@ -193,7 +193,7 @@ export default function CardsSection() {
       </div>
 
       {/* --- Cards Section with Spinning Borders --- */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl w-full pt-12 font-manrope" data-aos="fade-in">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl w-full pt-4 font-manrope" data-aos="fade-in">
   {[
     {
       title: '<3 second response time',
