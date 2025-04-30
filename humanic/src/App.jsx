@@ -73,6 +73,10 @@ useEffect(() => {
     Doctrine
   </NavLink>
 
+   {/* Spacer between Doctrine and Book a demo */}
+   <div className="hidden lg:block" style={{ width: '4.058vw' }}></div>
+  <div className="lg:hidden" style={{ width: '0vw' }}></div>
+
   {/* Book a demo - only visible on md+ */}
   <button className="hidden md:inline-flex border border-white px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition">
     Book a demo
