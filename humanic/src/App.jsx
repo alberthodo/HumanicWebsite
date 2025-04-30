@@ -98,7 +98,7 @@ useEffect(() => {
 <p className="text-xs sm:text-[0.8rem] mb-8 text-left">
   <NavLink
     to="/doctrine"
-    className="inline-block border border-[rgba(255,255,255,0.5)] rounded-md px-3 pt-1 pb-[5px] md:pb-[6px] text-[rgba(255,255,255,0.8)] underline"
+    className="inline-block border border-[rgba(255,255,255,0.5)] rounded-md px-3 pt-1 pb-[6px] md:pb-[6px] text-[rgba(255,255,255,0.8)] underline"
   >
     Read: Why we are building Humanic
   </NavLink>
