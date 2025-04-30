@@ -63,10 +63,10 @@ export default function Pricing() {
     <div className="absolute inset-0 rounded-2xl border border-white/10"></div>
     <div className="relative z-10 flex flex-col items-start">
       <h3 className="text-2xl font-semibold mb-2 text-white text-left">Free</h3>
-      <p className="text-gray-400 mb-6 text-left">See how Humanic powers your sales calls!</p>
+      <p className="text-[rgba(255,255,255,0.8)] mb-6 text-left">See how Humanic powers your sales calls!</p>
       <div className="flex items-baseline gap-2 mb-6 transition-all duration-500 medium-desktop:flex-col medium-desktop:items-start medium-desktop:gap-0">
         <div className="md:text-7xl text-7xl font-semibold text-white">$0</div>
-        <p className="text-gray-400 text-lg transition-opacity duration-500 opacity-100 medium-desktop:mt-3 medium-desktop:mb-4">/ per month</p>
+        <p className="text-[rgba(255,255,255,0.8)] text-lg transition-opacity duration-500 opacity-100 medium-desktop:mt-3 medium-desktop:mb-4">/ per month</p>
       </div>
       <button className="bg-[rgba(169,169,169,0.1)] border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] rounded-xl px-6 py-2 text-white transition w-[90%] max-w-[calc(90%-2px)] mx-auto">
         Get Started
@@ -74,11 +74,23 @@ export default function Pricing() {
       <hr className="w-full my-6 border-gray-700" />
       <div className="w-full text-left">
         <h4 className="text-lg font-semibold mb-4 text-white">What you will get</h4>
-        <ul className="space-y-4 text-gray-300 text-sm">
-          <li>Sixty minutes of Agent run time</li>
-          <li>Standard AI models</li>
-          <li>Limited uploads to knowledge base</li>
-        </ul>
+        <ul className="space-y-4 text-[rgba(255,255,255,0.8)] text-sm">
+  {[
+    "Sixty minutes of Agent run time",
+    "Standard AI models",
+    "Limited uploads to knowledge base"
+  ].map((text, idx) => (
+    <li key={idx} className="flex items-start gap-3">
+      <img
+        src="/circle.png"
+        alt="check"
+        className="w-[14px] h-[14px] md:w-[20px] md:h-[20px] opacity-80 md:mt-0 mt-1"
+      />
+      <span>{text}</span>
+    </li>
+  ))}
+</ul>
+
       </div>
     </div>
   </div>
@@ -94,52 +106,65 @@ export default function Pricing() {
 
   <div className="relative z-10 flex flex-col items-start">
     <h3 className="text-2xl font-semibold mb-2 text-white text-left">Pro</h3>
-    <p className="text-gray-400 mb-6 text-left">For 10x Sales Personnel</p>
+    <p className="text-[rgba(255,255,255,0.8)] mb-6 text-left">For 10x Sales Personnel</p>
 
-    {/* Pricing with transition */}
-    <div className="relative h-[80px] mb-6">
-      {/* Monthly Price */}
-      <div
-  className={`absolute inset-0 flex items-end gap-2 transition-opacity duration-300 ease-in-out 
-    ${isMonthly ? "opacity-100" : "opacity-0"} 
-    medium-desktop:flex-col medium-desktop:items-start medium-desktop:gap-0 s8:flex-col s8:items-start s8:gap-0 `}
->
-  <div className="flex items-baseline">
-    <span className="text-7xl text-white font-semibold">$19</span>
-    <span className="md:text-5xl text-3xl text-white font-semibold">.99</span>
+   {/* Pricing with transition */}
+   <div className="relative h-[100px] mb-6 w-full">
+  {/* Monthly Price */}
+  <div
+    className={`absolute inset-0 flex flex-col md:flex-row md:items-end md:gap-2 transition-opacity duration-300 ease-in-out 
+      ${isMonthly ? "opacity-100" : "opacity-0"}`}
+  >
+    <div className="flex items-baseline gap-1">
+      <span className="text-7xl text-white font-semibold">$19</span>
+      <span className="text-4xl md:text-5xl text-white font-semibold">.99</span>
+    </div>
+    <p className="text-[rgba(255,255,255,0.8)] text-lg mt-2 md:mt-0">
+      / per month
+    </p>
   </div>
-  <p className="text-gray-400 text-lg whitespace-nowrap medium-desktop:mt-3 medium-desktop:mb-4 s8:mt-3 s8:top-[10%] s8:text-lg">
-    / per month
-  </p>
+
+  {/* Yearly Price */}
+  <div
+    className={`absolute inset-0 flex items-end transition-opacity duration-300 ease-in-out ${
+      isMonthly ? "opacity-0" : "opacity-100"
+    }`}
+  >
+    <span className="text-7xl text-white font-semibold">$99</span>
+  </div>
 </div>
 
 
-      {/* Yearly Price */}
-      <div
-        className={`absolute inset-0 flex items-end transition-opacity duration-300 ease-in-out  ${
-          isMonthly ? "opacity-0" : "opacity-100"
-        }`}
-      >
-        <span className="text-7xl text-white font-semibold">$99</span>
-      </div>
-    </div>
 
-    {/* CTA Button */}
-    <button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition md:w-[90%] w-[94%] mx-auto medium-desktop:mt-10">
-      Get Started
-    </button>
+{/* CTA Button */}
+<button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10">
+  Get Started
+</button>
+
 
     <hr className="w-full my-6 border-gray-700" />
 
     {/* Features */}
     <div className="w-full text-left">
       <h4 className="text-lg font-semibold mb-4 text-white">What you will get</h4>
-      <ul className="space-y-4 text-gray-300 text-sm">
-        <li>Unlimited Agent run time</li>
-        <li>Most powerful AI models</li>
-        <li>Unlimited uploads to knowledge base</li>
-        <li>24/7 customer support</li>
-      </ul>
+      <ul className="space-y-4 text-[rgba(255,255,255,0.8)] text-sm">
+  {[
+    "Unlimited Agent run time",
+    "Most powerful AI models",
+    "Unlimited uploads to knowledge base",
+    "24/7 customer support"
+  ].map((text, idx) => (
+    <li key={idx} className="flex items-start gap-3">
+      <img
+        src="/circle.png"
+        alt="check"
+        className="w-[14px] h-[14px] md:w-[20px] md:h-[20px] opacity-80 md:mt-0 mt-0.5"
+      />
+      <span>{text}</span>
+    </li>
+  ))}
+</ul>
+
     </div>
   </div>
 </div>
@@ -150,22 +175,34 @@ export default function Pricing() {
     <div className="absolute inset-0 rounded-2xl border border-white/10"></div>
     <div className="relative z-10 flex flex-col items-start">
       <h3 className="text-2xl font-semibold mb-2 text-white text-left">Enterprise</h3>
-      <p className="text-gray-400 mb-6 text-left">For 10x Sales and GTM teams</p>
+      <p className="text-[rgba(255,255,255,0.8)] mb-6 text-left">For 10x Sales and GTM teams</p>
       <div className="md:text-6xl text-5xl mb-2 text-white font-semibold transition-all duration-500 medium-desktop:text-[3.6rem]">Custom</div>
-      <p className="text-gray-400 mb-6 transition-opacity duration-500"> </p>
+      <p className="text-[rgba(255,255,255,0.8)] mb-6 transition-opacity duration-500"> </p>
       <button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition w-[90%] max-w-[calc(90%-2px)] mx-auto">
         Get Started
       </button>
       <hr className="w-full my-6 border-gray-700" />
       <div className="w-full text-left">
         <h4 className="text-lg font-semibold mb-4 text-white">What you will get</h4>
-        <ul className="space-y-4 text-gray-300 text-sm">
-          <li>Unlimited Agent run time</li>
-          <li>Most powerful AI models</li>
-          <li>Unlimited uploads to knowledge base</li>
-          <li>Unlimited Integrations</li>
-          <li>24/7 customer support</li>
-        </ul>
+        <ul className="space-y-4 text-[rgba(255,255,255,0.8)] text-sm">
+  {[
+    "Unlimited Agent run time",
+    "Most powerful AI models",
+    "Unlimited uploads to knowledge base",
+    "Unlimited Integrations",
+    "24/7 customer support"
+  ].map((item, index) => (
+    <li key={index} className="flex items-start gap-3">
+      <img
+        src="/circle.png"
+        alt="Checkmark"
+        className="w-4 h-4 md:w-5 md:h-5  opacity-80 md:mt-0 mt-0.5"
+      />
+      <span>{item}</span>
+    </li>
+  ))}
+</ul>
+
       </div>
     </div>
   </div>

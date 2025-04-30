@@ -18,7 +18,7 @@ export default function CardsSection() {
   return (
 
     
-    <div className="min-h-screen w-full bg-black flex flex-col items-center font-manrope-500 justify-center px-6 py-16 space-y-16 md:pt-[10%] font-manrope">
+    <div className="min-h-screen w-full bg-black flex flex-col items-center font-manrope-500 justify-center px-6 py-16 space-y-16 md:pt-[10%] font-manrope scrollbar-hide">
       
       {/* --- Top Heading --- */} 
       <div className="text-center space-y-4 font-manrope " data-aos = "fade-up">

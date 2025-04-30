@@ -32,9 +32,9 @@ useEffect(() => {
 
 
     return (
-      <div className="relative bg-black text-white font-manrope-500 no-scrollbar">
+      <div className="relative bg-black text-white font-manrope">
         {/* Background SVG with animation */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none select-none z-0 animate-float no-scrollbar max-h-screen">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none select-none z-0 animate-float max-h-screen">
           <img
             src="/Line 2.svg"
             alt="Background Waves"
@@ -106,7 +106,7 @@ useEffect(() => {
 
 
     {/* Heading */}
-    <h1 className="text-[3rem] md:text-7xl leading-tight md:mb-[5%] mb-[10%] text-left no-scrollbar font-medium">
+    <h1 className="text-[3rem] md:text-7xl leading-tight md:mb-[5%] mb-[10%] text-left no-scrollbar font-manrope">
       <span>Hijack any sales call with</span>
       <br className="hidden md:block" />
       <span className="block md:mt-[10px] mt-0">this unfair advantage</span>
