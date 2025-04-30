@@ -33,7 +33,7 @@ export default function CardsSection() {
     <img
       src="/Group 128.png"
       alt="Mobile Placeholder"
-      className="w-[100%] h-[100%] object-contain"
+      className="w-[100%] h-[110%] object-contain"
     />
   </div>
       
