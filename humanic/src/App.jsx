@@ -74,7 +74,7 @@ useEffect(() => {
   </NavLink>
 
    {/* Spacer between Doctrine and Book a demo */}
-   <div className="hidden lg:block" style={{ width: '1.058vw' }}></div>
+   <div className="hidden lg:block" style={{ width: '2rem' }}></div>
   <div className="lg:hidden" style={{ width: '0vw' }}></div>
 
   {/* Book a demo - only visible on md+ */}
