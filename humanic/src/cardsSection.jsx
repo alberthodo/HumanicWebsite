@@ -29,7 +29,7 @@ export default function CardsSection() {
         Humanic turns your sales playbook into instant intel, slipping you the perfect response before your prospect even finishes.
         </p>
       </div>
-<div className="block md:hidden w-full flex justify-center items-center py-10 bg-black">
+<div className="block md:hidden w-full flex justify-center items-center bg-black">
     <img
       src="/Group 128.png"
       alt="Mobile Placeholder"
