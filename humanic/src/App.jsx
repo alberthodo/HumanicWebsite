@@ -8,23 +8,24 @@ import 'aos/dist/aos.css';
   export default function App() {
     const [isVisible, setIsVisible] = useState(false);
 
+    useEffect(() => {
+      AOS.init({
+        duration: 840, // animation duration in ms
+        once: false    // whether animation should happen only once
+      });
+      setTimeout(() => {
+        AOS.refresh();
+      }, 100);
+    }, []);
+  
 useEffect(() => {
   const timeout = setTimeout(() => {
     setIsVisible(true);
-  }, 100); // short delay to ensure DOM is ready
+  }, 100);
   return () => clearTimeout(timeout);
 }, []);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // animation duration in ms
-      once: false    // whether animation should happen only once
-    });
-    setTimeout(() => {
-      AOS.refresh();
-    }, 100);
-  }, []);
-
+ 
 
 
 
