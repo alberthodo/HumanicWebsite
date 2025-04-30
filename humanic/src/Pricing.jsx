@@ -102,13 +102,13 @@ export default function Pricing() {
       <div
   className={`absolute inset-0 flex items-end gap-2 transition-opacity duration-300 ease-in-out 
     ${isMonthly ? "opacity-100" : "opacity-0"} 
-    medium-desktop:flex-col medium-desktop:items-start medium-desktop:gap-0`}
+    medium-desktop:flex-col medium-desktop:items-start medium-desktop:gap-0 s8:flex-col s8:items-start s8:gap-0 `}
 >
   <div className="flex items-baseline">
     <span className="text-7xl text-white font-semibold">$19</span>
     <span className="md:text-5xl text-4xl text-white font-semibold">.99</span>
   </div>
-  <p className="text-gray-400 text-lg whitespace-nowrap medium-desktop:mt-3 medium-desktop:mb-4">
+  <p className="text-gray-400 text-lg whitespace-nowrap medium-desktop:mt-3 medium-desktop:mb-4 s8:mt-3 s8:top-[10%] s8:text-lg">
     / per month
   </p>
 </div>
@@ -151,7 +151,7 @@ export default function Pricing() {
     <div className="relative z-10 flex flex-col items-start">
       <h3 className="text-2xl font-semibold mb-2 text-white text-left">Enterprise</h3>
       <p className="text-gray-400 mb-6 text-left">For 10x Sales and GTM teams</p>
-      <div className="md:text-7xl text-6xl mb-2 text-white font-semibold transition-all duration-500 medium-desktop:text-[3.6rem]">Custom</div>
+      <div className="md:text-6xl text-5xl mb-2 text-white font-semibold transition-all duration-500 medium-desktop:text-[3.6rem]">Custom</div>
       <p className="text-gray-400 mb-6 transition-opacity duration-500"> </p>
       <button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition w-[90%] max-w-[calc(90%-2px)] mx-auto">
         Get Started

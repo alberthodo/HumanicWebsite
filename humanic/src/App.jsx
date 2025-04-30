@@ -31,9 +31,9 @@ useEffect(() => {
 
 
     return (
-      <div className="relative max-h-screen bg-black text-white font-manrope-500 no-scrollbar">
+      <div className="relative bg-black text-white font-manrope-500 no-scrollbar">
         {/* Background SVG with animation */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none select-none z-0 animate-float no-scrollbar">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none select-none z-0 animate-float no-scrollbar max-h-screen">
           <img
             src="/Line 2.svg"
             alt="Background Waves"
@@ -57,30 +57,27 @@ useEffect(() => {
   </div>
 
   {/* Navbar Right Section */}
-  <div className="flex items-center font-manrope ml-auto">
-    {/* Doctrine Link */}
-    <NavLink
-      to="/doctrine"
-      className={({ isActive }) =>
-        `text-sm font-medium transition pb-1 ${
-          isActive
-            ? 'text-white border-b-2 border-[#F44876]'
-            : 'text-white hover:border-b-2 hover:border-[#F44876]'
-        }`
-      }
-    >
-      Doctrine
-    </NavLink>
+<div className="flex items-center font-manrope ml-auto space-x-4 md:space-x-6 lg:space-x-12">
+  {/* Doctrine Link */}
+  <NavLink
+    to="/doctrine"
+    className={({ isActive }) =>
+      `text-sm font-medium transition pb-1 ${
+        isActive
+          ? 'text-white border-b-2 border-[#F44876]'
+          : 'text-white hover:border-b-2 hover:border-[#F44876]'
+      }`
+    }
+  >
+    Doctrine
+  </NavLink>
 
-    {/* Spacer on larger screens */}
-    <div className="hidden lg:block" style={{ width: '4.058vw' }}></div>
-    <div className="lg:hidden text-normal" style={{ width: '0vw' }}></div>
+  {/* Book a demo - only visible on md+ */}
+  <button className="hidden md:inline-flex border border-white px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition">
+    Book a demo
+  </button>
+</div>
 
-    {/* Book a demo - only visible on md+ */}
-    <button className="hidden md:inline-flex border border-white px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition no-scrollbar">
-      Book a demo
-    </button>
-  </div>
 </div>
 
 
@@ -177,20 +174,20 @@ useEffect(() => {
         <Pricing />
 
         {/* Footer */}
-<footer className="w-full py-6 bg-black">
-  <div className="bg-black w-[90%] md:max-w-7xl max-w-5xl md:h-[100px] sm:h-[60px] flex items-center justify-between px-4 sm:px-6 rounded-3xl mx-auto border-t border-l border-r border-[rgba(255,255,255,0.2)] pt-[0%]">
+<footer className="w-full py-0 bg-black">
+  <div className="w-[90%] max-w-7xl h-[60px] sm:h-[80px] flex items-center justify-between px-4 sm:px-6 mx-auto border-t border-l border-r border-[rgba(255,255,255,0.2)] rounded-xl">
     
     {/* Left: Logo */}
-    <div className="flex items-center">
+    <div className="flex items-center h-full">
       <img
         src="/humanictitle.png"
         alt="Humanic Logo"
-        className="h-6 sm:h-12 pt-[2%] "  // smaller on mobile, normal on sm+
+        className="h-5 sm:h-8 object-contain"
       />
     </div>
 
     {/* Right: Text */}
-    <div className="text-white md:text-lg text-[0.7rem] text-right pt-[2%] md:pt-[0%]">
+    <div className="text-white text-xs sm:text-sm text-right">
       Humanic Inc. All Rights Reserved
     </div>
     

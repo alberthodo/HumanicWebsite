@@ -25,7 +25,7 @@ export default function Doctrine() {
   
 
   return (
-    <div className="relative min-h-screen bg-black text-white font-manrope overflow-hidden">
+    <div className="relative min-h-screen bg-black text-white font-manrope overflow-hidden ">
       {/* Navbar */}
       <div className={`relative z-10 flex items-center justify-between px-6 md:px-16 py-6 no-scrollbar transition-opacity duration-1000 ease-out ${
     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -43,8 +43,8 @@ export default function Doctrine() {
             Doctrine
           </a>
           <div className="hidden lg:block" style={{ width: '4.058vw' }}></div>
-          <div className="lg:hidden" style={{ width: '5vw' }}></div>
-          <button className="border border-white px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition no-scrollbar">
+          <div className="lg:hidden" style={{ width: '0vw' }}></div>
+          <button className="hidden md:inline inline-flex border border-white px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition no-scrollbar">
             Book a demo
           </button>
         </div>
@@ -55,36 +55,38 @@ export default function Doctrine() {
         <img src="/Capa 1.svg" alt="Wave background" className="w-full object-cover" />
       </div>
 
+
       {/* Text Content */}
-      <div className={`relative z-10 max-w-3xl mx-auto px-6 md:px-0 pt-[9%] pb-40 text-left space-y-10 font-manrope transition-opacity duration-1000 ease-out ${
+      <div className={`relative  z-10 max-w-3xl mx-auto px-6 md:px-0 pt-[9%] pb-40 text-left space-y-10 font-manrope  transition-opacity duration-1000 ease-out ${
     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
   }`} >
-        <h1 className="text-4xl leading-tight md:leading-tight md:text-6xl  ">
+        <h1 className="text-3xl leading-relaxed md:leading-tight md:text-6xl">
           Close every sales call.<br />
           No exceptions.
         </h1>
 
         <div className="space-y-6 text-lg text-gray-200" data-aos="fade-up">
-          <p className="md:pt-[10%] text-2xl" ><strong>Sales isn’t fair. It never was.</strong></p>
-          <p className="text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. We’re here for the ones who refuse to lose.</p>
+          <p className="md:pt-[10%] text-[1rem] md:text-2xl" ><strong>Sales isn’t fair. It never was.</strong></p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. We’re here for the ones who refuse to lose.</p>
 
-          <p className="md:pt-[2%] text-2xl" ><strong>Humanic is your unfair advantage.</strong></p>
-          <p className="text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” You’re not guessing. <br /> You’re controlling the outcome.</p>
+          <p className="md:pt-[2%] text-[1rem] md:text-2xl" ><strong>Humanic is your unfair advantage.</strong></p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” You’re not guessing. <br /> You’re controlling the outcome.</p>
 
-          <p className="md:pt-[2%] text-2xl" > <strong>Your competition is stuck in Google Docs and Slack threads.</strong></p>
-          <p className="text-[1.1rem] leading-loose" > You’re out here closing before they finish their intro. They’re playing checkers. You’re running a casino.</p>
+          <p className="md:pt-[2%] text-[1rem] md:text-2xl" > <strong>Your competition is stuck in Google Docs and Slack threads.</strong></p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" > You’re out here closing before they finish their intro. They’re playing checkers. You’re running a casino.</p>
 
-          <p className="text-[1.1rem] leading-loose" >We don’t care about “best practices.” <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you’re probably the one getting outsold.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >We don’t care about “best practices.” <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you’re probably the one getting outsold.</p>
 
-          <p className="md:pt-[2%] text-2xl" ><strong>This isn’t software. It’s a weapon.</strong></p>
-          <p className="text-[1.1rem] leading-loose" >For closers. Killers. People who walk into calls knowing the deal is already done. <br />Humanic doesn’t help you sell — it makes sure you win. <br />So if you’re still asking “is this fair?” — you’re already behind.</p>
+          <p className="md:pt-[2%] text-[1rem] md:text-2xl" ><strong>This isn’t software. It’s a weapon.</strong></p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >For closers. Killers. People who walk into calls knowing the deal is already done. <br />Humanic doesn’t help you sell — it makes sure you win. <br />So if you’re still asking “is this fair?” — you’re already behind.</p>
 
-          <p className="md:pt-[4%] text-2xl md:leading-relaxed" ><strong>Welcome to the future of selling.<br />
-          It’s rigged. And you’re holding the controls.</strong></p>
+          <p className="md:pt-[4%] text-[1rem] md:text-2xl md:leading-relaxed" ><strong>Welcome to the future of selling.<br />
+          It’s rigged. And you’re holding the   controls.</strong></p>
         </div>
 
               {/* Buttons */}
               <div className="flex flex-col md:flex-row gap-4 items-center md:items-start justify-center md:justify-start w-full no-scrollbar z-10 relative pt-[4%] font-manrope" data-aos="fade-up">
+              
 
   {/* Transparent Waitlist Button */}
   <button className="flex items-center justify-center gap-2 border border-[#F44876] text-white hover:bg-[#F44876] hover:text-white px-5 py-3 md:px-6 md:py-3 rounded-lg text-lg md:text-lg transition w-full max-w-[300px] md:max-w-[300px] md:w-auto">
@@ -120,22 +122,25 @@ export default function Doctrine() {
   />
 </div>
 
-      {/* Footer */}
-<footer className="w-full py-6 bg-black">
-  <div className="bg-black w-[90%] max-w-7xl h-[100px] flex items-center justify-between px-4 sm:px-6 rounded-3xl mx-auto border-t border-l border-r border-[rgba(255,255,255,0.2)] pt-[0%] ">
+
+     {/* Footer */}
+<footer className="w-full py-0 bg-black">
+  <div className="w-[90%] max-w-7xl h-[60px] sm:h-[80px] flex items-center justify-between px-4 sm:px-6 mx-auto border-t border-l border-r border-[rgba(255,255,255,0.2)] rounded-xl">
+    
     {/* Left: Logo */}
-    <div className="flex items-center">
+    <div className="flex items-center h-full">
       <img
         src="/humanictitle.png"
         alt="Humanic Logo"
-        className="h-12"
+        className="h-5 sm:h-8 object-contain"
       />
     </div>
 
     {/* Right: Text */}
-    <div className="text-white text-sm text-right">
+    <div className="text-white text-xs sm:text-sm text-right">
       Humanic Inc. All Rights Reserved
     </div>
+    
   </div>
 </footer>
 

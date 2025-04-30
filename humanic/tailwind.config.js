@@ -14,7 +14,9 @@ export default {
           spinSlow: 'spin 10s linear infinite',
         },
         screens: {
-          'medium-desktop': {'raw': '(min-width: 1024px) and (max-width: 1250px)'},
+          's8': {'raw': '(min-width: 340px) and (max-width:380px)'},
+          'medium-desktop': {'raw': '(min-width: 1020px) and (max-width: 1250px)'},
+          
         },
     
       },

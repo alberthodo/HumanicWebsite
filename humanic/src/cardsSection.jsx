@@ -84,7 +84,7 @@ export default function CardsSection() {
 
 <div className=" hidden md:block relative w-full max-w-7xl mx-auto h-auto min-h-[543px] overflow-hidden rounded-t-[2rem]" data-aos="fade-up">
   {/* Outer Gradient Border */}
-  <div className="absolute inset-0 p-[1px] rounded-t-[2rem] bg-gradient-to-b from-[#EA7575] to-transparent z-0">
+  <div className="absolute inset-0 md:p-[0.09rem] p-[1px] rounded-t-[2rem] bg-gradient-to-b from-[#EA7575] to-transparent z-0">
     <div className="w-full h-full rounded-t-[2rem] bg-gradient-to-b from-[#1d070d] to-black"></div>
   </div>
 
@@ -92,7 +92,7 @@ export default function CardsSection() {
   <div className="relative z-10 px-4 sm:px-6 md:px-10 py-8 flex flex-col justify-between h-full text-white">
 
    {/* Top Row */}
-<div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+<div className="flex flex-col sm:flex-row justify-between items-start gap-4 md:gap-1">
   <div className="leading-tight">
     <h2 className="text-sm sm:text-2xl font-semibold whitespace-nowrap mb-[5px]">
       Meeting w/Martha: GroundBlu Tech
@@ -100,7 +100,7 @@ export default function CardsSection() {
     <p className="text-xs text-gray-300">Wednesday, April 25</p>
   </div>
 
-  <div className="flex items-center justify-between w-full md:w-auto md:ml-auto md:gap-12 flex-wrap">
+  <div className="flex items-center justify-between w-full md:w-auto md:ml-auto  md:gap-2">
   {/* Humanic is listening... */}
   <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 border border-white/10 text-sm">
     <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
@@ -121,6 +121,7 @@ export default function CardsSection() {
     </button>
   </div>
 </div>
+
 
 </div>
 
