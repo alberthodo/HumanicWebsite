@@ -58,7 +58,7 @@ useEffect(() => {
   </div>
 
   {/* Navbar Right Section */}
-<div className="flex items-center font-manrope ml-auto space-x-4 md:space-x-6 lg:space-x-12">
+  <div className="flex items-center font-manrope ml-auto">
   {/* Doctrine Link */}
   <NavLink
     to="/doctrine"
@@ -73,8 +73,8 @@ useEffect(() => {
     Doctrine
   </NavLink>
 
-   {/* Spacer between Doctrine and Book a demo */}
-   <div className="hidden lg:block" style={{ width: '0.5rem' }}></div>
+  {/* Spacer between Doctrine and Book a demo */}
+  <div className="hidden lg:block" style={{ width: '4.058vw' }}></div>
   <div className="lg:hidden" style={{ width: '0vw' }}></div>
 
   {/* Book a demo - only visible on md+ */}
@@ -82,6 +82,7 @@ useEffect(() => {
     Book a demo
   </button>
 </div>
+
 
 </div>
 
