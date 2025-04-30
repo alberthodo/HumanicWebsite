@@ -106,7 +106,7 @@ export default function Pricing() {
 >
   <div className="flex items-baseline">
     <span className="text-7xl text-white font-semibold">$19</span>
-    <span className="md:text-5xl text-4xl text-white font-semibold">.99</span>
+    <span className="md:text-5xl text-3xl text-white font-semibold">.99</span>
   </div>
   <p className="text-gray-400 text-lg whitespace-nowrap medium-desktop:mt-3 medium-desktop:mb-4 s8:mt-3 s8:top-[10%] s8:text-lg">
     / per month
