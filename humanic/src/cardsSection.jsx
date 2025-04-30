@@ -29,7 +29,13 @@ export default function CardsSection() {
         Humanic turns your sales playbook into instant intel, slipping you the perfect response before your prospect even finishes.
         </p>
       </div>
-
+<div className="block md:hidden w-full flex justify-center items-center py-10">
+    <img
+      src="/Group 128.png"
+      alt="Mobile Placeholder"
+      className="w-[100%] h-auto object-contain"
+    />
+  </div>
       
 
       {/* --- Gradient Box --- */}
@@ -66,13 +72,9 @@ export default function CardsSection() {
   {/* <div className="absolute bottom-0 left-0 w-full h-10 bg-black z-10 rounded-b-none"></div>
 </div> */}
 
-<div className="block md:hidden w-full flex justify-center items-center py-10">
-    <img
-      src="/Group 128.png"
-      alt="Mobile Placeholder"
-      className="w-[100%] h-auto object-contain"
-    />
-  </div>
+
+
+  {/* hello */}
 
 
 <div className=" hidden md:block relative w-full max-w-7xl mx-auto h-auto min-h-[543px] overflow-hidden rounded-t-[2rem]" data-aos="fade-up">
