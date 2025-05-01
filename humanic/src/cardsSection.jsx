@@ -22,7 +22,7 @@ export default function CardsSection() {
       
       {/* --- Top Heading --- */} 
       <div className="text-center space-y-4 font-manrope " data-aos = "fade-up">
-        <h2 className="text-4xl md:text-5xl text-white pt-[25%] md:pt-[0%]">
+        <h2 className="text-4xl md:text-5xl text-white pt-[20%] md:pt-[0%]">
           Real Insights. Real Time. Without Asking.
         </h2>
         <p className="text-gray-300 md:text-xl max-w-3xl mx-auto md:pt-[2%] pt-[10%]">
