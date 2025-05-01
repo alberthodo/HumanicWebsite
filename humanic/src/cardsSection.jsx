@@ -102,7 +102,7 @@ export default function CardsSection() {
 
   <div className="flex items-center justify-between w-full md:w-auto md:ml-auto  md:gap-2">
   {/* Humanic is listening... */}
-  <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 border border-white/10 text-sm">
+  <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-transparent border border-white/10 text-sm">
     <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
     Humanic is listening...
   </div>
