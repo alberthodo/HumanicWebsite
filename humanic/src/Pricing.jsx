@@ -37,7 +37,7 @@ export default function Pricing() {
 
 
 
-<div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl w-full px-4 pt-[50%] md:pt-[6%] font-manrope" data-aos="fade-in">
+<div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl w-full px-4 pt-[60%] md:pt-[6%] font-manrope" data-aos="fade-in">
   {/* Toggle Buttons - shown above cards on mobile/tablet */}
 <div className="col-span-full flex justify-center mb-10 space-x-2 lg:hidden">
   <button
@@ -57,6 +57,7 @@ export default function Pricing() {
     Yearly
   </button>
 </div>
+
 
 
   {/* Free Plan */}
