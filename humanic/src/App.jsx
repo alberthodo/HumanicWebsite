@@ -124,7 +124,7 @@ useEffect(() => {
 
     {/* Subtext */}
     <p className="text-[1.1rem] md:text-lg mb-10 max-w-3xl text-left no-scrollbar">
-      Humanic is your personal AI Sales Agent—listening in real time, spotting objections, and feeding you answers before you fumble.
+    Meet Humanic—your personal AI Sales Agent. It listens live, spots objections, and drops deal-saving answers before you fumble
     </p>
 
     {/* Buttons */}
