@@ -21,7 +21,7 @@ export default function Pricing() {
           Priced to close deals—not drain budgets
         </h1>
         <p className="mt-4 text-[rgba(255,255,255,0.8)] text-lg md:text-xl max-w-5xl mx-auto pt-[2%]">
-        Choose that plan that arms you with the unfair advantage because in sales, second place gets nothing.
+        Your quota doesn’t care about your budget. Get the edge, or get left behind.
         </p>
       </div>
 
