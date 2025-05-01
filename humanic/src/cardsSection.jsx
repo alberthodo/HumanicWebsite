@@ -217,7 +217,7 @@ export default function CardsSection() {
       text: 'Humanic integrates seamlessly with your sales stack to effortlessly extract context without manually uploading to the knowledge base',
     },
     {
-      title: 'Automation',
+      title: 'Close at breakneck speed',
       text: "Keep conversations tight, accurate, and run lean sales cycles—without cutting corners.Win trust faster by  delivering at every step",
     },
   ].map((card, i) => (

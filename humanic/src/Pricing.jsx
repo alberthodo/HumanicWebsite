@@ -8,16 +8,16 @@ export default function Pricing() {
 
   return (
     
-    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center px-6 py-16 space-y-16 overflow-hidden font-manrope">
+    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center px-6 py-16 space-y-16 overflow-hidden font-manrope scrollbar-hide">
 
       {/* Top Wave SVG */}
-      <div className="absolute w-[100%] md:w-[100%] h-[100%] opacity-100 pointer-events-none select-none object-cover pt-[1%]">
+      <div className="absolute w-[100%] md:w-[100%] h-[100%] opacity-100 pointer-events-none select-none object-cover md:pt-[1%]">
         <img src="/Capa 1.svg" alt="Wave background" className="w-full object-cover" />
       </div>
 
       {/* Text Section */}
-      <div className="relative z-10 text-center px-4 mt-32 md:mt-48 pt-[6%] font-manrope" data-aos = "fade-up">
-        <h1 className="text-4xl md:text-5xl leading-tight text-white">
+      <div className="relative z-10 text-center px-4 mt-32 md:mt-48 pt-[10%] font-manrope" data-aos = "fade-up">
+        <h1 className="text-4xl md:text-5xl leading-tight text-white ">
           Priced to close deals—not drain budgets
         </h1>
         <p className="mt-4 text-[rgba(255,255,255,0.8)] text-lg md:text-xl max-w-5xl mx-auto pt-[2%]">
