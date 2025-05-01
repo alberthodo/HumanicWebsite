@@ -11,8 +11,8 @@ export default function Pricing() {
     <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center px-6 py-16 space-y-16 overflow-hidden font-manrope scrollbar-hide">
 
      {/* Text on top of SVG for mobile */}
-<div className="absolute top-[2%] w-full px-4 z-20 text-center md:static md:mt-48 font-manrope" data-aos="fade-up">
-  <h1 className="text-3xl md:text-5xl leading-tight text-white">
+<div className="absolute top-[2%] md:w-full w-[90%] px-4 z-20 text-center md:static md:mt-48 font-manrope" data-aos="fade-up">
+  <h1 className="text-[2.5rem] md:text-5xl leading-tight text-white">
     Priced to close deals—not drain budgets
   </h1>
   <p className="mt-4 text-[rgba(255,255,255,0.8)] text-base md:text-xl max-w-5xl mx-auto pt-[2%]">
@@ -37,7 +37,7 @@ export default function Pricing() {
 
 
 
-<div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl w-full px-4 pt-[30%] md:pt-[6%] font-manrope" data-aos="fade-in">
+<div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl w-full px-4 pt-[50%] md:pt-[6%] font-manrope" data-aos="fade-in">
   {/* Toggle Buttons - shown above cards on mobile/tablet */}
 <div className="col-span-full flex justify-center mb-10 space-x-2 lg:hidden">
   <button
@@ -126,13 +126,18 @@ export default function Pricing() {
   </div>
 
   {/* Yearly Price */}
-  <div
-    className={`absolute inset-0 flex items-end transition-opacity duration-300 ease-in-out ${
-      isMonthly ? "opacity-0" : "opacity-100"
-    }`}
-  >
+<div
+  className={`absolute inset-0 flex flex-col md:flex-row md:items-end md:gap-2 transition-opacity duration-300 ease-in-out ${
+    isMonthly ? "opacity-0" : "opacity-100"
+  }`}
+>
+  <div className="flex items-baseline gap-1">
     <span className="text-7xl text-white font-semibold">$99</span>
   </div>
+  <p className="text-[rgba(255,255,255,0.8)] text-lg mt-2 md:mt-0">
+    / per year
+  </p>
+</div>
 </div>
 
 
