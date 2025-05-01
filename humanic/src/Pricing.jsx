@@ -10,20 +10,21 @@ export default function Pricing() {
     
     <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center px-6 py-16 space-y-16 overflow-hidden font-manrope scrollbar-hide">
 
-      {/* Top Wave SVG */}
-      <div className="absolute w-[100%] md:w-[100%] h-[100%] opacity-100 pointer-events-none select-none object-cover md:pt-[1%]">
-        <img src="/Capa 1.svg" alt="Wave background" className="w-full object-cover" />
-      </div>
+     {/* Text on top of SVG for mobile */}
+<div className="absolute top-[2%] w-full px-4 z-20 text-center md:static md:mt-48 font-manrope" data-aos="fade-up">
+  <h1 className="text-3xl md:text-5xl leading-tight text-white">
+    Priced to close deals—not drain budgets
+  </h1>
+  <p className="mt-4 text-[rgba(255,255,255,0.8)] text-base md:text-xl max-w-5xl mx-auto pt-[2%]">
+    Your quota doesn’t care about your budget. Get the edge, or get left behind.
+  </p>
+</div>
 
-      {/* Text Section */}
-      <div className="relative z-10 text-center px-4 mt-32 md:mt-48 pt-[10%] font-manrope" data-aos = "fade-up">
-        <h1 className="text-4xl md:text-5xl leading-tight text-white ">
-          Priced to close deals—not drain budgets
-        </h1>
-        <p className="mt-4 text-[rgba(255,255,255,0.8)] text-lg md:text-xl max-w-5xl mx-auto pt-[2%]">
-        Your quota doesn’t care about your budget. Get the edge, or get left behind.
-        </p>
-      </div>
+{/* Background SVG image */}
+<div className="absolute w-full h-full opacity-100 pointer-events-none select-none object-cover z-10">
+  <img src="/Capa 1.svg" alt="Wave background" className="w-full object-cover" />
+</div>
+
 
       {/* --- Behind Cards Line SVG --- */}
       <div className="absolute left-[-26%] top-[80%] md:top-[10%] z-0">
@@ -36,7 +37,7 @@ export default function Pricing() {
 
 
 
-<div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl w-full px-4 pt-[5%] font-manrope" data-aos="fade-in">
+<div className="relative z-10 mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl w-full px-4 pt-[30%] md:pt-[6%] font-manrope" data-aos="fade-in">
   {/* Toggle Buttons - shown above cards on mobile/tablet */}
 <div className="col-span-full flex justify-center mb-10 space-x-2 lg:hidden">
   <button
