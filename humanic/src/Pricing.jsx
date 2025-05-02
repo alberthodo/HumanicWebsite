@@ -280,9 +280,16 @@ export default function Pricing() {
 
 
   {/* Contact Button */}
-  <button className="border border-[rgba(255,255,255,0.5)] hover:bg-white hover:text-black text-[rgba(255,255,255,0.8)] px-5 py-3 md:px-6 md:py-3 rounded-lg text-lg md:text-lg transition duration-300 w-full max-w-[300px] md:max-w-[300px] md:w-auto z-10">
+<a 
+  href="https://cal.com/samriddho-ghosh-2qapfs/humanic-demo?overlayCalendar=true" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-full max-w-[300px] md:max-w-[300px] md:w-auto z-10"
+>
+  <button className="border border-[rgba(255,255,255,0.5)] hover:bg-white hover:text-black text-[rgba(255,255,255,0.8)] px-5 py-3 md:px-6 md:py-3 rounded-lg text-lg md:text-lg transition duration-300 w-full">
     Contact for enterprise sales!
   </button>
+</a>
 </div>
 
 

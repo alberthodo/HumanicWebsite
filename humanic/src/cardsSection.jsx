@@ -9,8 +9,8 @@ export default function CardsSection() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800, // animation duration in ms
-      once: false    // whether animation should happen only once
+      duration: 800, 
+      once: false  
     });
   }, []);
 
@@ -20,7 +20,6 @@ export default function CardsSection() {
     
     <div className="min-h-screen w-full bg-black flex flex-col items-center font-manrope-500 justify-center px-6 py-16 space-y-16 md:pt-[10%] font-manrope scrollbar-hide">
       
-      {/* --- Top Heading --- */} 
       <div className="text-center space-y-4 font-manrope " data-aos = "fade-up">
         <h2 className="text-4xl md:text-5xl text-white pt-[15%] md:pt-[0%]">
           Real Insights. Real Time. Without Asking.
@@ -40,20 +39,17 @@ export default function CardsSection() {
         <div className="absolute bottom-0 left-0 w-full h-10 bg-black z-10 rounded-b-none"></div>
       </div> */}
 
-      {/* --- Responsive Image Box with Gradient Border --- */}
 {/* <div className="relative w-full max-w-7xl h-[570px] overflow-hidden rounded-t-[2rem]" data-aos="fade-up"> */}
   {/* Gradient border wrapper */}
   {/* <div className="absolute inset-0 p-[1px] rounded-t-[2rem] bg-gradient-to-b from-[#EA7575] to-transparent z-0">
     <div className="w-full h-full rounded-t-[0rem] overflow-hidden"> */}
       
-      {/* Desktop Image */}
       {/* <img
         src="/desktopimg.png"
         alt="Desktop View"
         className="hidden md:block w-full h-full object-cover"
       /> */}
 
-      {/* Mobile Image */}
       {/* <img
         src="/phoneimg.png"
         alt="Mobile View"
@@ -62,7 +58,6 @@ export default function CardsSection() {
     </div>
   </div> */}
 
-  {/* Bottom black strip (optional) */}
   {/* <div className="absolute bottom-0 left-0 w-full h-10 bg-black z-10 rounded-b-none"></div>
 </div> */}
 
@@ -73,7 +68,7 @@ export default function CardsSection() {
   <div className="block md:hidden w-full bg-black">
   <div className="w-full h-full flex justify-center items-center bg-black pb-[15%]">
     <img
-      src="/Group 128.png"
+      src="/mobiletext.png"
       alt="Mobile Placeholder"
       className="w-full h-auto object-contain bg-black"
     />
@@ -83,15 +78,12 @@ export default function CardsSection() {
 
 
 <div className=" hidden md:block relative w-full max-w-7xl mx-auto h-auto min-h-[543px] overflow-hidden rounded-t-[2rem]" data-aos="fade-up">
-  {/* Outer Gradient Border */}
   <div className="absolute inset-0 md:p-[0.09rem] p-[1px] rounded-t-[2rem] bg-gradient-to-b from-[#EA7575] to-transparent z-0">
     <div className="w-full h-full rounded-t-[2rem] bg-gradient-to-b from-[#1d070d] to-black"></div>
   </div>
 
   {/* Content */}
   <div className="relative z-10 px-4 sm:px-6 md:px-10 py-8 flex flex-col justify-between h-full text-white">
-
-   {/* Top Row */}
 <div className="flex flex-col sm:flex-row justify-between items-start gap-4 md:gap-1">
   <div className="leading-tight">
     <h2 className="text-sm sm:text-2xl font-semibold whitespace-nowrap mb-[5px]">
@@ -101,13 +93,10 @@ export default function CardsSection() {
   </div>
 
   <div className="flex items-center justify-between w-full md:w-auto md:ml-auto  md:gap-2">
-  {/* Humanic is listening... */}
   <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-transparent border border-white/10 text-sm">
     <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
     Humanic is listening...
   </div>
-
-  {/* Play/Pause Buttons */}
   <div className="flex gap-2 items-center p-1 rounded-lg border border-[#F44876] bg-white/10">
     <button className="rounded-full p-2 hover:bg-white/20 transition-colors">
       <svg className="h-4 w-4 text-white" fill="black" viewBox="0 0 24 24">
@@ -145,15 +134,11 @@ export default function CardsSection() {
       </div>
     </div>
 
-    {/* Conversation */}
     <div className="mt-10 w-full pl-4 sm:pl-6 md:pl-0">
       <div className="flex flex-row gap-4 items-start max-w-full sm:max-w-[80%] md:max-w-[70%]">
-        {/* Dialogbox Logo */}
         <div className="min-w-[50px]">
           <img src="/smallwhite.png" width={50} height={50} alt="Dialogbox Logo" />
         </div>
-
-        {/* Speech Bubble */}
         <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-5 text-lg flex-1">
           <p>
             Our platform accelerates model training by automating data augmentation with pre-configured pipelines and optimizing hyper parameter tuning using <strong>Bayesian optimization, cutting iteration time by up to 40%.</strong>
@@ -163,7 +148,6 @@ export default function CardsSection() {
             For instance, in a previous deployment with a leading e-commerce company, we <strong>reduced their model training time from 12 hours to under 4 hours</strong>, significantly improving their time-to-market for personalized recommendations.
           </p>
 
-          {/* Source Buttons */}
           <div className="mt-4 flex items-center justify-between flex-wrap gap-4">
             <img src="/sources.png" alt="Sources" className="h-6 w-auto" />
             <img src="/copypinrecycle.png" alt="Copy Pin Recycle" className="h-5 w-auto" />
@@ -174,12 +158,6 @@ export default function CardsSection() {
 
   </div>
 </div>
-
-
-
-
-
-
 
 
       {/* --- Middle Heading --- */}
@@ -193,7 +171,6 @@ export default function CardsSection() {
         </p>
       </div>
 
-      {/* --- Cards Section with Spinning Borders --- */}
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl w-full pt-4 font-manrope" data-aos="fade-in">
   {[
     {
