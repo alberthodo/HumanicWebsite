@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import SignUpModal from "./SignUpModal.jsx";
 
 const STRIPE_LINKS = {
-  monthly: "https://buy.stripe.com/test_28o6oAgYhc7w4k8fYY",
+  monthly: "https://buy.stripe.com/8wM17F3gSaf72Ag001",
   yearly: "https://buy.stripe.com/5kA2bJcRs1IB0s87su"
 };
 
@@ -89,7 +89,7 @@ export default function Pricing() {
         <h4 className="text-lg font-semibold mb-4 text-white">What you will get</h4>
         <ul className="space-y-4 text-[rgba(255,255,255,0.8)] text-sm">
   {[
-    "Sixty minutes of Agent run time",
+    "180 minutes of Agent run time",
     "Standard AI models",
     "Limited uploads to knowledge base"
   ].map((text, idx) => (
@@ -203,9 +203,14 @@ export default function Pricing() {
       <div className="md:text-6xl text-5xl mb-2 text-white font-semibold transition-all duration-500 medium-desktop:text-[3.6rem]">Custom</div>
       <p className="text-[rgba(255,255,255,0.8)] mb-6 transition-opacity duration-500"> </p>
       {/* CTA Button */}
-<button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)]">
-  Get Started
-</button>
+      <a
+        href="https://cal.com/team-at-humanic/humanic-demo"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)] flex items-center justify-center"
+      >
+        Get Started
+      </a>
       <hr className="w-full my-6 border-gray-700" />
       <div className="w-full text-left">
         <h4 className="text-lg font-semibold mb-4 text-white">What you will get</h4>
@@ -296,7 +301,7 @@ export default function Pricing() {
 
   {/* Contact Button */}
 <a 
-  href="https://cal.com/samriddho-ghosh-2qapfs/humanic-demo?overlayCalendar=true" 
+  href="https://cal.com/team-at-humanic/humanic-demo" 
   target="_blank" 
   rel="noopener noreferrer"
   className="w-full max-w-[300px] md:max-w-[300px] md:w-auto z-10"

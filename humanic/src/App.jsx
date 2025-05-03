@@ -79,7 +79,7 @@ useEffect(() => {
 
   {/* Book a demo - only visible on md+ */}
 <a 
-  href="https://cal.com/samriddho-ghosh-2qapfs/humanic-demo?overlayCalendar=true" 
+  href="https://cal.com/team-at-humanic/humanic-demo" 
   target="_blank" 
   rel="noopener noreferrer"
 >
@@ -160,7 +160,7 @@ useEffect(() => {
 
       {/* Contact Button */}
 <a 
-  href="https://cal.com/samriddho-ghosh-2qapfs/humanic-demo?overlayCalendar=true" 
+  href="https://cal.com/team-at-humanic/humanic-demo" 
   target="_blank" 
   rel="noopener noreferrer"
   className="w-full max-w-[300px] md:max-w-[300px] md:w-auto z-10"
@@ -200,7 +200,7 @@ useEffect(() => {
 
     {/* Contact Button */}
 <a 
-  href="https://cal.com/samriddho-ghosh-2qapfs/humanic-demo?overlayCalendar=true" 
+  href="https://cal.com/team-at-humanic/humanic-demo" 
   target="_blank" 
   rel="noopener noreferrer"
   className="w-full max-w-[300px] md:max-w-[300px] md:w-auto z-10"

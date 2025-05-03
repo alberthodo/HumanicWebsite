@@ -64,22 +64,22 @@ export default function Doctrine() {
         </h1>
 
         <div className="space-y-6 text-lg text-gray-200" data-aos="fade-up">
-          <p className="md:pt-[10%] text-[1rem] md:text-2xl" ><strong>Sales isn’t fair. It never was.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. <br /> We’re here for the ones who refuse to lose.</p>
+          <p className="md:pt-[10%] text-[1rem] md:text-2xl" ><strong>Sales isn't fair. It never was.</strong></p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >Some people fumble through objections. Others steamroll them. <br /> We're here for the ones who refuse to lose.</p>
 
           <p className="md:pt-[2%] text-[1rem] md:text-2xl" ><strong>Humanic is your unfair advantage.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No “I’ll get back to you.” <br /> You’re not guessing. You’re controlling the outcome.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >It listens in real time. Spots objections before they hit. Feeds you answers before you blink. <br /> No prep. No stalling. No "I'll get back to you." <br /> You're not guessing. You're controlling the outcome.</p>
 
           <p className="md:pt-[2%] text-[1rem] md:text-2xl" > <strong>Your competition is stuck in Google Docs and Slack threads.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" > You’re out here closing before they finish their intro. <br /> They’re playing checkers. You’re running a casino.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" > You're out here closing before they finish their intro. <br /> They're playing checkers. You're running a casino.</p>
 
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >We don’t care about “best practices.” <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you’re probably the one getting outsold.</p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >We don't care about "best practices." <br />We care about Winners. <strong>Speed. Control. Dominance.</strong> <br /> If that makes you uncomfortable, you're probably the one getting outsold.</p>
 
-          <p className="md:pt-[2%] text-[1rem] md:text-2xl" ><strong>This isn’t software. It’s a weapon.</strong></p>
-          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >For closers. Killers. People who walk into calls knowing the deal is already done. <br />Humanic doesn’t help you sell — it makes sure you win. <br />So if you’re still asking “is this fair?” — you’re already behind.</p>
+          <p className="md:pt-[2%] text-[1rem] md:text-2xl" ><strong>This isn't software. It's a weapon.</strong></p>
+          <p className="text-[1rem] md:text-[1.1rem] leading-loose" >For closers. Killers. People who walk into calls knowing the deal is already done. <br />Humanic doesn't help you sell — it makes sure you win. <br />So if you're still asking "is this fair?" — you're already behind.</p>
 
           <p className="md:pt-[4%] text-[1rem] md:text-2xl md:leading-relaxed" ><strong>Welcome to the future of selling.<br />
-          It’s rigged. And you’re holding the   controls.</strong></p>
+          It's rigged. And you're holding the   controls.</strong></p>
         </div>
 
            
@@ -106,7 +106,7 @@ export default function Doctrine() {
 </a>
 
 <a 
-  href="https://cal.com/samriddho-ghosh-2qapfs/humanic-demo?overlayCalendar=true" 
+  href="https://cal.com/team-at-humanic/humanic-demo" 
   target="_blank" 
   rel="noopener noreferrer"
   className="w-full max-w-[300px] md:max-w-[300px] md:w-auto z-10"
