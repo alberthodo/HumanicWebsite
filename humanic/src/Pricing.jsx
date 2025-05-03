@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import SignUpModal from "./SignUpModal.jsx";
 
 
 export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState("monthly");
+  const [showSignUp, setShowSignUp] = useState(false);
 
   const isMonthly = billingCycle === "monthly";
 
   return (
-    
-    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center px-6 py-16 space-y-16 overflow-hidden font-manrope scrollbar-hide">
+    <div>
+      <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center px-6 py-16 space-y-16 overflow-hidden font-manrope scrollbar-hide">
 
      {/* Text on top of SVG for mobile */}
 <div className="absolute top-[2%] md:w-full w-[90%] px-4 z-20 text-center md:static md:mt-48 font-manrope" data-aos="fade-up">
@@ -16,7 +18,7 @@ export default function Pricing() {
     Priced to close deals—not drain budgets
   </h1>
   <p className="mt-4 text-[rgba(255,255,255,0.8)] text-base md:text-xl max-w-5xl mx-auto pt-[2%]">
-    Your quota doesn’t care about your budget. Get the edge, or get left behind.
+    Your quota doesn't care about your budget. Get the edge, or get left behind.
   </p>
 </div>
 
@@ -145,7 +147,10 @@ export default function Pricing() {
 
 
 {/* CTA Button */}
-<button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)]">
+<button
+  className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)]"
+  onClick={() => setShowSignUp(true)}
+>
   Get Started
 </button>
 
@@ -293,6 +298,8 @@ export default function Pricing() {
 </div>
 
 
+    </div>
+    <SignUpModal open={showSignUp} onClose={() => setShowSignUp(false)} billingCycle={billingCycle} />
     </div>
   );
 }

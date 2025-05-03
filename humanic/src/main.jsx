@@ -25,6 +25,7 @@ import App from './App.jsx';
 import CardsSection from './cardsSection.jsx';
 import Pricing from './Pricing.jsx';
 import Doctrine from './Doctrine.jsx';
+import PaymentSuccess from './PaymentSuccess.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -33,6 +34,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/doctrine" element={<Doctrine />} />
+        <Route path="/payment-success" element={<PaymentSuccess />} />
       </Routes>
     </Router>
   </StrictMode>
