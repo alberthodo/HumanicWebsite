@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import SignUpModal from "./SignUpModal.jsx";
+// import SignUpModal from "./SignUpModal.jsx";
 
+const STRIPE_LINKS = {
+  monthly: "https://buy.stripe.com/test_28o6oAgYhc7w4k8fYY",
+  yearly: "https://buy.stripe.com/5kA2bJcRs1IB0s87su"
+};
 
 export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState("monthly");
-  const [showSignUp, setShowSignUp] = useState(false);
+  // const [showSignUp, setShowSignUp] = useState(false);
 
   const isMonthly = billingCycle === "monthly";
 
@@ -73,9 +77,13 @@ export default function Pricing() {
         <p className="text-[rgba(255,255,255,0.8)] text-lg transition-opacity duration-500 opacity-100 medium-desktop:mt-3 medium-desktop:mb-4">/ per month</p>
       </div>
       {/* CTA Button */}
-<button className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)]">
-  Get Started
-</button>
+      <a
+        href="https://storage.googleapis.com/humanic-macos-updates/HumanicInstaller.dmg"
+        download
+        className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)] flex items-center justify-center"
+      >
+        Get Started
+      </a>
       <hr className="w-full my-6 border-gray-700" />
       <div className="w-full text-left">
         <h4 className="text-lg font-semibold mb-4 text-white">What you will get</h4>
@@ -149,7 +157,9 @@ export default function Pricing() {
 {/* CTA Button */}
 <button
   className="bg-[rgba(169,169,169,0.1)] rounded-xl px-6 py-2 border-0 shadow-[0_0_0_0.5px_rgba(169,169,169,0.5)] text-white transition-colors duration-300 md:w-[90%] w-[94%] mx-auto mt-4 medium-desktop:mt-10 hover:bg-[rgba(169,169,169,0.3)]"
-  onClick={() => setShowSignUp(true)}
+  onClick={() => {
+    window.location.href = STRIPE_LINKS[billingCycle] || STRIPE_LINKS["monthly"];
+  }}
 >
   Get Started
 </button>
@@ -299,7 +309,7 @@ export default function Pricing() {
 
 
     </div>
-    <SignUpModal open={showSignUp} onClose={() => setShowSignUp(false)} billingCycle={billingCycle} />
+    {/* <SignUpModal open={showSignUp} onClose={() => setShowSignUp(false)} billingCycle={billingCycle} /> */}
     </div>
   );
 }
